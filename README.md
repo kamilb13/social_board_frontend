@@ -1,35 +1,69 @@
-# social_board
+# Social Board
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplikacja typu tablica umożliwiająca użytkownikom rejestrację, logowanie, dodawanie postów ze zdjęciami, komentarzy oraz interakcję poprzez "łapki w górę". Użytkownicy mogą edytować i usuwać tylko swoje posty oraz komentarze. Dodatkowo użytkownicy mogą obserwować innych (follow) i przestać ich obserwować (unfollow).
 
-## Recommended IDE Setup
+<div style="display: flex; justify-content: space-between;">
+    <img src="social_board_screens/screen_1.png" width="40%">
+    <img src="social_board_screens/screen_2.png" width="40%">
+    <img src="social_board_screens/screen_3.png" width="40%">
+    <img src="social_board_screens/screen_4.png" width="40%">
+    <img src="social_board_screens/screen_5.png" width="40%">
+    <img src="social_board_screens/screen_6.png" width="40%">
+</div>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Funkcjonalności
 
-## Customize configuration
+- **Rejestracja i logowanie** – użytkownicy mogą się zarejestrować i zalogować.
+- **Posty** – użytkownicy mogą dodawać posty z treścią i zdjęciem oraz edytować i usuwać je, ale tylko twórca posta ma do tego prawo.
+- **Edytowanie i usuwanie postów** – tylko twórca posta może edytować lub usunąć swój post.
+- **Komentarze** – użytkownicy mogą dodawać komentarze do postów oraz edytować i usuwać je, ale tylko twórca komentarza ma do tego prawo.
+- **Łapki w górę** – użytkownicy mogą "lajkować" posty.
+- **Zdjęcie profilowe** – każdy użytkownik może dodać lub zmienić swoje zdjęcie profilowe.
+- **Follow / Unfollow** – użytkownicy mogą obserwować innych użytkowników oraz przestać ich obserwować.
+- **Lista obserwowanych i obserwujących** – użytkownicy mogą zobaczyć, kogo obserwują oraz kto ich obserwuje.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Technologie
 
-## Project Setup
+- **Frontend**: Vue.js, Vuex, TailwindCSS
+- **Backend**: Express.js
+- **Baza danych**: PostgreSQL
 
-```sh
-npm install
-```
+## Instalacja
 
-### Compile and Hot-Reload for Development
+1. **Klonowanie repozytorium**
+   Aby sklonować repozytorium, użyj polecenia:
+   ```bash
+   git clone https://github.com/TwojaNazwaUzytkownika/tablica-postow.git
+2. **Instalacja zależności**
+Przejdź do katalogów frontend i backend i zainstaluj wymagane zależności:
+3. **Frontend (Vue):**
+   ```bash
+    cd frontend
+    npm install
+   
+4. **Backend (Express):**
+   ```bash
+    cd backend
+    npm install
+  
+5. **Konfiguracja bazy danych**
 
-```sh
-npm run dev
-```
+Skonfiguruj PostgreSQL, utwórz bazę danych i połącz ją z aplikacją, edytując odpowiednie ustawienia w plikach konfiguracyjnych backendu.
 
-### Compile and Minify for Production
+6 .**Uruchomienie aplikacji**
 
-```sh
-npm run build
-```
+- Frontend:
 
-### Lint with [ESLint](https://eslint.org/)
+   ```bash
+    cd frontend
+    npm run serve
 
-```sh
-npm run lint
-```
+- Backend:
+
+   ```bash
+    cd backend
+    npm run start
+Aplikacja będzie dostępna pod adresem http://localhost:8080 dla frontendu i http://localhost:3000 dla backendu (lub zgodnie z ustawieniami).
+
+7. **Licencja**
+MIT
